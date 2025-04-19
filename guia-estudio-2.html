@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Estudio N2 - Seguridad en Sistemas Informáticos</title>
+    <style>
+        :root {
+            --primary-blue: #1a73e8;
+            --secondary-blue: #4285f4;
+            --dark-blue: #0d47a1;
+            --light-blue: #e8f0fe;
+            --text-color: #202124;
+            --border-color: #dadce0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Google Sans', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f8f9fa;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-button:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--dark-blue);
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: var(--primary-blue);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        h4 {
+            color: var(--text-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .term {
+            font-weight: 600;
+            color: var(--dark-blue);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .list-item {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .list-item:before {
+            content: "•";
+            color: var(--primary-blue);
+            position: absolute;
+            left: 0;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .back-button:hover {
+            background: var(--dark-blue);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.35rem;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            .nav-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guía de Estudio N2: Seguridad en Sistemas Informáticos</h1>
+
+        <div class="navigation-buttons">
+            <a href="guia-estudio-1.html" class="nav-button">
+                <i class="fas fa-arrow-left"></i>
+                Guía N1
+            </a>
+            <a href="lectura-ciberseguridad.html" class="nav-button">
+                Volver al Contenido
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Introducción</h2>
+            <p>La seguridad en sistemas informáticos no es solo una cuestión técnica, sino una necesidad estratégica en todos los ámbitos donde se maneje información: universidades, hospitales, bancos, empresas o incluso redes personales. Esta guía, estructurada como un pequeño libro de lectura, está pensada para introducirte de forma clara y progresiva en los fundamentos más importantes de la seguridad informática, preparándote además para enfrentar con éxito tu evaluación.</p>
+        </div>
+
+        <div class="section">
+            <h2>Capítulo 1: ¿Qué es la Seguridad Informática?</h2>
+            <p>Imagina que tu información personal —mensajes, cuentas bancarias, fotos, ideas— estuviera al alcance de cualquier extraño. La seguridad informática nace para evitar justamente eso. Su función principal es proteger los activos de información frente a todo tipo de amenazas, errores y fallas, ya sea desde dentro o desde fuera de la organización.</p>
+
+            <h3>Activos de Información</h3>
+            <p>Un activo de información es todo aquello que tiene valor para una organización o persona: una contraseña, una base de datos, un equipo, o incluso el conocimiento de un empleado. Estos activos deben ser identificados, clasificados y protegidos en función de su importancia y vulnerabilidad. No todos los activos requieren el mismo nivel de protección, por eso es necesario conocer su criticidad.</p>
+
+            <h3>Amenazas y Vulnerabilidades</h3>
+            <p>Los activos están constantemente expuestos a amenazas: desastres naturales, robos, ataques informáticos, errores humanos, etc. Una amenaza es cualquier circunstancia que pueda explotar una debilidad del sistema. Si estas amenazas se encuentran con vulnerabilidades —brechas en la seguridad, como contraseñas débiles o software sin actualizar—, el riesgo se vuelve real y puede generar un impacto negativo.</p>
+
+            <h3>Ejemplo Práctico</h3>
+            <p>Si un sistema antiguo no tiene actualizaciones de seguridad (vulnerabilidad) y un hacker lo ataca (amenaza), la organización podría perder su base de datos (impacto), especialmente si no tiene respaldos. Aquí el riesgo se concreta debido a una falta de medidas preventivas.</p>
+        </div>
+
+        <div class="section">
+            <h2>Capítulo 2: El Triángulo de la Seguridad – CID</h2>
+            <p>Como un triángulo que se sostiene en tres lados, la seguridad de la información se basa en tres principios fundamentales: Confidencialidad, Integridad y Disponibilidad (CID).</p>
+
+            <h3>Confidencialidad</h3>
+            <p>Es el principio que asegura que la información solo sea accesible para quienes estén autorizados. Esto implica que se deben aplicar mecanismos como:</p>
+            <div class="list-item">Control de acceso por usuario y contraseña.</div>
+            <div class="list-item">Uso de cifrado en comunicaciones y archivos.</div>
+            <div class="list-item">Aplicación de políticas de mínimo privilegio.</div>
+
+            <h3>Integridad</h3>
+            <p>Este principio asegura que los datos no hayan sido modificados o manipulados sin autorización. Implica mantener la exactitud y consistencia de la información durante todo su ciclo de vida. Para garantizar integridad se usan:</p>
+            <div class="list-item">Firmas digitales.</div>
+            <div class="list-item">Hashes de verificación.</div>
+            <div class="list-item">Control de versiones.</div>
+
+            <h3>Disponibilidad</h3>
+            <p>La información debe estar accesible cuando se necesita. No sirve tener un sistema perfectamente protegido si no está disponible cuando se requiere. Se asegura mediante:</p>
+            <div class="list-item">Redundancia de sistemas.</div>
+            <div class="list-item">Backups periódicos.</div>
+            <div class="list-item">UPS y sistemas de energía de respaldo.</div>
+            <div class="list-item">Infraestructura en la nube.</div>
+        </div>
+
+        <div class="section">
+            <h2>Capítulo 3: Reglas para Proteger – Políticas y Planes</h2>
+            <p>Una política de seguridad es un conjunto de directrices que definen cómo debe protegerse la información dentro de una organización. Funciona como el reglamento de la casa. Es un documento vivo, revisado periódicamente y aprobado por los niveles más altos de la institución.</p>
+
+            <h3>Elementos Esenciales de las Políticas</h3>
+            <div class="list-item">Objetivos claros de protección.</div>
+            <div class="list-item">Roles y responsabilidades de los usuarios.</div>
+            <div class="list-item">Reglas de comportamiento digital aceptable.</div>
+            <div class="list-item">Reglas sobre dispositivos, redes, correo electrónico, contraseñas y uso externo.</div>
+            <div class="list-item">Procedimientos ante incumplimiento.</div>
+
+            <h3>Planes de Contingencia</h3>
+            <p>Los planes de contingencia establecen cómo se debe actuar ante situaciones anómalas o de emergencia. Un buen plan incluye:</p>
+            <div class="list-item">Evaluación de amenazas posibles.</div>
+            <div class="list-item">Inventario de sistemas críticos.</div>
+            <div class="list-item">Procedimientos paso a paso para recuperar la operación.</div>
+            <div class="list-item">Estrategias de comunicación.</div>
+            <div class="list-item">Pruebas regulares para asegurar su efectividad.</div>
+        </div>
+
+        <div class="section">
+            <h2>Capítulo 4: Protegiendo el Mundo Real – Seguridad Física</h2>
+            <p>La seguridad física es la base sobre la cual se construyen todas las demás medidas de protección digital. ¿De qué sirve tener un sistema con contraseñas robustas, encriptación de datos y monitoreo constante si cualquiera puede entrar a la sala de servidores y desconectarlos?</p>
+
+            <h3>4.1 ¿Qué incluye la seguridad física?</h3>
+            <div class="list-item">Control de acceso físico: A través de llaves, tarjetas electrónicas, teclados numéricos o sistemas biométricos.</div>
+            <div class="list-item">Videovigilancia: Cámaras que graban continuamente los accesos y espacios críticos.</div>
+            <div class="list-item">Protección contra incendios: Sensores de humo, extintores y sistemas automáticos de rociadores.</div>
+            <div class="list-item">Protección eléctrica: UPS y generadores de respaldo.</div>
+            <div class="list-item">Zonificación de seguridad: Dividir el espacio físico en áreas con diferentes niveles de acceso.</div>
+
+            <h3>4.2 Riesgos comunes sin seguridad física</h3>
+            <div class="list-item">Robo de equipos que contienen información confidencial.</div>
+            <div class="list-item">Daño intencional o sabotaje.</div>
+            <div class="list-item">Acceso de personas no autorizadas.</div>
+            <div class="list-item">Cortes de energía que afectan la disponibilidad del servicio.</div>
+        </div>
+
+        <div class="section">
+            <h2>Capítulo 5: Seguridad Lógica – Control Digital</h2>
+            <p>La seguridad lógica se refiere a los mecanismos digitales que protegen el acceso a los sistemas de información. Si la seguridad física protege el entorno, la lógica protege el interior.</p>
+
+            <h3>5.1 Autenticación: ¿quién eres tú?</h3>
+            <p>Es el proceso de verificar la identidad de un usuario. Puede ser mediante:</p>
+            <div class="list-item">Algo que sabes: contraseña o PIN.</div>
+            <div class="list-item">Algo que tienes: tarjeta inteligente, token, app de autenticación.</div>
+            <div class="list-item">Algo que eres: huella digital, reconocimiento facial, iris.</div>
+
+            <h3>5.2 Autorización: ¿qué puedes hacer?</h3>
+            <p>Una vez que el sistema sabe quién eres, debe determinar qué estás autorizado a hacer. ¿Puedes ver reportes? ¿Modificar datos? ¿Crear nuevos usuarios?</p>
+
+            <h3>5.3 Auditoría: todo queda registrado</h3>
+            <p>Es el proceso de registrar y analizar las acciones dentro del sistema: quién entró, cuándo, qué hizo. Esto permite detectar anomalías, investigar incidentes y asegurar el cumplimiento de políticas.</p>
+
+            <h3>5.4 Modelos de control de acceso</h3>
+            <div class="list-item">RBAC (Role-Based Access Control): Acceso basado en el rol del usuario.</div>
+            <div class="list-item">ABAC (Attribute-Based Access Control): Usa atributos como hora, ubicación, tipo de conexión.</div>
+        </div>
+
+        <div class="section">
+            <h2>Capítulo 6: Criptografía – Esconder para Proteger</h2>
+            <p>La criptografía es uno de los pilares más antiguos y fundamentales de la seguridad informática. A través de fórmulas matemáticas y algoritmos, permite transformar información comprensible en un código ilegible para protegerla del acceso no autorizado.</p>
+
+            <h3>6.1 ¿Por qué es necesaria?</h3>
+            <p>En un entorno digital donde los datos viajan por redes públicas como Internet, proteger la confidencialidad y la integridad se vuelve esencial. Cifrar es la forma de asegurar que solo quien tenga la clave correcta podrá entender el mensaje.</p>
+
+            <h3>6.2 Cifrado simétrico</h3>
+            <p>Utiliza la misma clave tanto para cifrar como para descifrar. Es rápido y eficiente, pero tiene un problema clave: ambas partes deben conocer y proteger la clave compartida.</p>
+
+            <h4>Ventajas:</h4>
+            <div class="list-item">Velocidad</div>
+            <div class="list-item">Simplicidad en algoritmos</div>
+
+            <h4>Desventajas:</h4>
+            <div class="list-item">Riesgo en la distribución de claves</div>
+        </div>
+    </div>
+    <a href="lectura-ciberseguridad.html" class="back-button">Volver</a>
+</body>
+</html> 

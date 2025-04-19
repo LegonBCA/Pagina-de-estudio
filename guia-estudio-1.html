@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Estudio N1 - Políticas y Procedimientos de Seguridad</title>
+    <style>
+        :root {
+            --primary-blue: #1a73e8;
+            --secondary-blue: #4285f4;
+            --dark-blue: #0d47a1;
+            --light-blue: #e8f0fe;
+            --text-color: #202124;
+            --border-color: #dadce0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Google Sans', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f8f9fa;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-button:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--dark-blue);
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: var(--primary-blue);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        h4 {
+            color: var(--text-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .term {
+            font-weight: 600;
+            color: var(--dark-blue);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .list-item {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .list-item:before {
+            content: "•";
+            color: var(--primary-blue);
+            position: absolute;
+            left: 0;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .back-button:hover {
+            background: var(--dark-blue);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.35rem;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            .nav-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guía de Estudio N1: Políticas y Procedimientos de Seguridad</h1>
+
+        <div class="navigation-buttons">
+            <a href="lectura-ciberseguridad.html" class="nav-button">
+                <i class="fas fa-arrow-left"></i>
+                Volver al Contenido
+            </a>
+            <a href="guia-estudio-2.html" class="nav-button">
+                Guía N2
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Introducción</h2>
+            <p>La seguridad informática es un pilar fundamental para proteger los activos de información de una organización. Uno de los primeros pasos para garantizar esta protección es la creación, revisión y análisis de documentos básicos de seguridad, como políticas y procedimientos. Estos documentos establecen las reglas, directrices y pasos a seguir para prevenir, detectar y responder a incidentes de seguridad.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contenido</h2>
+            
+            <h3>¿Qué son las políticas de seguridad informática?</h3>
+            <p>Las políticas de seguridad informática son documentos formales que definen las reglas y directrices que una organización debe seguir para proteger sus sistemas, datos y recursos tecnológicos. Estas políticas son esenciales para establecer un marco de trabajo que garantice la confidencialidad, integridad y disponibilidad de la información.</p>
+
+            <h4>Características principales de las políticas de seguridad:</h4>
+            <div class="list-item">Claras y comprensibles: Deben ser redactadas de manera sencilla para que todos los empleados puedan entenderlas.</div>
+            <div class="list-item">Específicas: Deben abordar temas concretos, como el uso de contraseñas, acceso a sistemas, manejo de datos sensibles, etc.</div>
+            <div class="list-item">Actualizables: Deben revisarse periódicamente para adaptarse a nuevas amenazas y tecnologías.</div>
+            <div class="list-item">Obligatorias: Todos los empleados deben cumplirlas, sin excepciones.</div>
+
+            <h4>Ejemplos de políticas comunes:</h4>
+            <div class="list-item">Política de uso aceptable de recursos tecnológicos.</div>
+            <div class="list-item">Política de contraseñas.</div>
+            <div class="list-item">Política de acceso remoto.</div>
+            <div class="list-item">Política de copias de seguridad (backups).</div>
+            <div class="list-item">Política de respuesta ante incidentes.</div>
+        </div>
+
+        <div class="section">
+            <h3>¿Qué son los procedimientos de seguridad informática?</h3>
+            <p>Los procedimientos de seguridad informática son documentos que describen los pasos detallados que deben seguirse para implementar las políticas de seguridad. Mientras que las políticas establecen el "qué" y el "por qué", los procedimientos explican el "cómo".</p>
+
+            <h4>Características principales de los procedimientos:</h4>
+            <div class="list-item">Detallados: Deben incluir instrucciones paso a paso.</div>
+            <div class="list-item">Prácticos: Deben ser fáciles de seguir por los empleados responsables.</div>
+            <div class="list-item">Específicos: Cada procedimiento debe estar relacionado con una política de seguridad.</div>
+            <div class="list-item">Documentados: Deben estar disponibles para consulta en caso de necesidad.</div>
+
+            <h4>Ejemplos de procedimientos comunes:</h4>
+            <div class="list-item">Procedimiento para la creación y gestión de contraseñas.</div>
+            <div class="list-item">Procedimiento para realizar copias de seguridad.</div>
+            <div class="list-item">Procedimiento para la gestión de incidentes de seguridad.</div>
+            <div class="list-item">Procedimiento para la instalación de actualizaciones y parches.</div>
+            <div class="list-item">Procedimiento para la gestión de accesos y permisos.</div>
+        </div>
+
+        <div class="section">
+            <h3>Importancia de la revisión de políticas y procedimientos</h3>
+            <p>La revisión periódica de las políticas y procedimientos de seguridad es crucial para garantizar que sigan siendo efectivos frente a nuevas amenazas y cambios en la infraestructura tecnológica de la organización.</p>
+
+            <h4>Razones para realizar revisiones periódicas:</h4>
+            <div class="list-item">Adaptación a nuevas amenazas: Las ciberamenazas evolucionan constantemente, por lo que las políticas deben actualizarse para abordar nuevos riesgos.</div>
+            <div class="list-item">Cumplimiento normativo: Muchas regulaciones (como GDPR, ISO 27001, etc.) exigen que las políticas de seguridad estén actualizadas.</div>
+            <div class="list-item">Cambios en la organización: La incorporación de nuevas tecnologías, empleados o procesos puede requerir ajustes en las políticas.</div>
+            <div class="list-item">Lecciones aprendidas: Los incidentes de seguridad pasados pueden revelar debilidades en las políticas actuales.</div>
+
+            <h4>Pasos para revisar políticas y procedimientos:</h4>
+            <div class="list-item">Identificar las políticas y procedimientos existentes.</div>
+            <div class="list-item">Evaluar su efectividad actual.</div>
+            <div class="list-item">Compararlas con estándares y normativas vigentes.</div>
+            <div class="list-item">Actualizar los documentos según sea necesario.</div>
+            <div class="list-item">Comunicar los cambios a todos los empleados.</div>
+        </div>
+
+        <div class="section">
+            <h3>Buenas prácticas para la creación y revisión de documentos de seguridad</h3>
+            <div class="list-item">Involucrar a todas las áreas de la organización: La seguridad no es solo responsabilidad del departamento de TI; todos los empleados deben participar.</div>
+            <div class="list-item">Basarse en estándares internacionales: Como ISO 27001, NIST, COBIT, entre otros.</div>
+            <div class="list-item">Realizar auditorías internas: Para identificar brechas en las políticas y procedimientos.</div>
+            <div class="list-item">Capacitar a los empleados: Asegurarse de que todos entiendan las políticas y sepan cómo aplicarlas.</div>
+            <div class="list-item">Documentar todo: Mantener un registro de las revisiones y actualizaciones realizadas.</div>
+        </div>
+
+        <div class="section">
+            <h3>Ejemplo práctico: Política de contraseñas</h3>
+            
+            <h4>Política:</h4>
+            <div class="list-item">Las contraseñas deben tener al menos 12 caracteres.</div>
+            <div class="list-item">Deben incluir letras mayúsculas, minúsculas, números y caracteres especiales.</div>
+            <div class="list-item">Deben cambiarse cada 90 días.</div>
+            <div class="list-item">No se permite reutilizar las últimas 5 contraseñas.</div>
+
+            <h4>Procedimiento:</h4>
+            <div class="list-item">Acceder al sistema de gestión de usuarios.</div>
+            <div class="list-item">Seleccionar la opción "Cambiar contraseña".</div>
+            <div class="list-item">Introducir la nueva contraseña siguiendo los requisitos establecidos.</div>
+            <div class="list-item">Confirmar el cambio y cerrar sesión.</div>
+        </div>
+
+        <div class="section">
+            <h3>Herramientas para la gestión de políticas y procedimientos</h3>
+            <p>Existen herramientas que facilitan la creación, revisión y distribución de documentos de seguridad, como:</p>
+            <div class="list-item">Microsoft Word/Google Docs: Para redactar y compartir documentos.</div>
+            <div class="list-item">Confluence: Para gestionar políticas y procedimientos en un entorno colaborativo.</div>
+            <div class="list-item">SharePoint: Para almacenar y distribuir documentos de manera centralizada.</div>
+            <div class="list-item">Herramientas de cumplimiento normativo: Como Varonis o Qualys, que ayudan a identificar brechas en las políticas.</div>
+        </div>
+
+        <div class="section">
+            <h3>Conclusión</h3>
+            <p>La revisión de políticas y procedimientos de seguridad informática es una tarea esencial para proteger los activos de información de una organización. Estos documentos no solo establecen las reglas del juego, sino que también garantizan que todos los empleados sepan cómo actuar frente a posibles amenazas. Una buena práctica es realizar revisiones periódicas, capacitar al personal y basarse en estándares internacionales para mantener un entorno seguro y confiable.</p>
+        </div>
+    </div>
+    <a href="lectura-ciberseguridad.html" class="back-button">Volver</a>
+</body>
+</html> 

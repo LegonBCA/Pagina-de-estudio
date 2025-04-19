@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Contenido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #0d47a1;
+            --accent-color: #2196f3;
+            --text-color: #333;
+            --light-bg: #f5f7fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+        }
+
+        .book-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+
+        .book-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--light-bg);
+        }
+
+        .book-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .book-description {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .chapter-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .chapter-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .chapter-content {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .resource-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .resource-item {
+            padding: 15px;
+            border-bottom: 1px solid var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .resource-item:last-child {
+            border-bottom: none;
+        }
+
+        .resource-icon {
+            color: var(--accent-color);
+            margin-right: 10px;
+            width: 25px;
+        }
+
+        .resource-badge {
+            background-color: var(--light-bg);
+            color: var(--primary-color);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-header">
+            <h1 class="book-title">Título del Libro</h1>
+            <p class="book-description">Descripción detallada del contenido del libro y su propósito.</p>
+        </div>
+
+        <div class="chapters-container">
+            <!-- Capítulo 1 -->
+            <div class="chapter-card">
+                <h2 class="chapter-title">Capítulo 1: Introducción</h2>
+                <p class="chapter-content">Descripción del capítulo y sus objetivos de aprendizaje.</p>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <div>
+                            <i class="fas fa-file-pdf resource-icon"></i>
+                            <span>Material Teórico</span>
+                        </div>
+                        <span class="resource-badge">PDF</span>
+                    </li>
+                    <li class="resource-item">
+                        <div>
+                            <i class="fas fa-file-code resource-icon"></i>
+                            <span>Ejercicios Prácticos</span>
+                        </div>
+                        <span class="resource-badge">10 ejercicios</span>
+                    </li>
+                    <li class="resource-item">
+                        <div>
+                            <i class="fas fa-video resource-icon"></i>
+                            <span>Videos Tutoriales</span>
+                        </div>
+                        <span class="resource-badge">5 videos</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Capítulo 2 -->
+            <div class="chapter-card">
+                <h2 class="chapter-title">Capítulo 2: Conceptos Avanzados</h2>
+                <p class="chapter-content">Descripción del capítulo y sus objetivos de aprendizaje.</p>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <div>
+                            <i class="fas fa-file-pdf resource-icon"></i>
+                            <span>Material Teórico</span>
+                        </div>
+                        <span class="resource-badge">PDF</span>
+                    </li>
+                    <li class="resource-item">
+                        <div>
+                            <i class="fas fa-file-code resource-icon"></i>
+                            <span>Proyectos Prácticos</span>
+                        </div>
+                        <span class="resource-badge">3 proyectos</span>
+                    </li>
+                    <li class="resource-item">
+                        <div>
+                            <i class="fas fa-video resource-icon"></i>
+                            <span>Videos Tutoriales</span>
+                        </div>
+                        <span class="resource-badge">4 videos</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
